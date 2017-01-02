@@ -30,7 +30,7 @@ class Views {
                 });
 
             if (nbsejours > 0)
-                this.exo.querySelector('#count').innerHTML = `Il y a eu ${nbsejours}`
+                this.exo.querySelector('#count').innerHTML = `Il y a eu ${nbsejours} séjours.`
         });
     }
 }
