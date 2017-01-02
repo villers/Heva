@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heva test</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="exo">
+            <div class="page-header">
+                <h1>l’exercice</h1>
+                <div class="lead">L’exercice consiste à écrire « from scratch » une simple application frontend permettant d’afficher ces données.<br>
+                    L’interface sera composée de 3 parties distinctes :<br>
+                    <ul>
+                        <li>Un sélecteur d’année (2013, 2014, 2015)</li>
+                        <li>Un indicateur du total des séjours pour l’année choisie.</li>
+                        <li>Une liste triable présentant les 100 établissements avec leurs nombres de séjours pour l’année sélectionnée.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <select id="dates">
+                <option value="">Choisir une date</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+            </select>
+
+            <span id="count"></span>
+
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th class="sorting">id</th>
+                    <th class="sorting">nom</th>
+                    <th class="sorting">ville</th>
+                    <th class="sorting">nombre</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/tablesorter.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/actions.js"></script>
+    <script src="js/views.js"></script>
+    <script>
+        new Views();
+    </script>
+
+</body>
+</html>
